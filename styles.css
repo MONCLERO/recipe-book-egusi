@@ -1,4 +1,4 @@
-/* CSS Variables */
+/* Variables */
 :root {
   --palm-red: #c0392b;
   --palm-light: #e8a87c;
@@ -21,11 +21,25 @@
   background-color: var(--cream);
   color: var(--text-dark);
   font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  line-height: 1.8;
+  font-weight: 500;
+  line-height: 1.9;
   max-width: 780px;
   margin: 0 auto;
-  padding: 40px 24px 80px;
+  padding: 40px 0px 40px 0px;
+}
+
+.recipe-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.recipe-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
 }
 
 /* Headings */
@@ -41,7 +55,6 @@
   font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
   color: var(--deep-green);
-  margin-top: 40px;
   margin-bottom: 6px;
 }
 
@@ -61,13 +74,13 @@ p {
 
 /* Recipe Image */
 img {
-  display: inline-block;
+  display: inline;
   margin: 24px 0;
   border-radius: 10px;
   box-shadow: 0 6px 20px rgba(107, 58, 42, 0.18);
-  max-width: 100%;
+  max-width: 100%
   height: auto;
-}
+ }
 
 /* Lists */
 ul, ol {
@@ -87,6 +100,26 @@ ul li::marker {
 ol li::marker {
   color: var(--deep-green);
   font-weight: 700;
+}
+
+ul.recipe-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 24px;
+}
+
+ul.recipe-details li {
+  background-color: #fff4e6;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 16px;
+  flex: 1 1 calc(33% -12px);
+  min-width: 160px;
+  font-size: 0.92rem;
+  color: var(--text-dark);
 }
 
 /* Inline Tags */
