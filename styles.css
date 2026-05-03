@@ -1,0 +1,136 @@
+/* CSS Variables */
+:root {
+  --palm-red: #c0392b;
+  --palm-light: #e8a87c;
+  --deep-green: #2d6a4f;
+  --cream: #fdf6ec;
+  --warm-brown: #6b3a2a;
+  --text-dark: #2c1a0e;
+  --text-mid: #5a3e32;
+  --border: #e0c9a6;
+}
+
+/* Base Reset & Body */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.bodywork {
+  background-color: var(--cream);
+  color: var(--text-dark);
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  line-height: 1.8;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+/* Headings */
+.main-page {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.6rem;
+  color: var(--warm-brown);
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.major-section {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: var(--deep-green);
+  margin-top: 40px;
+  margin-bottom: 6px;
+}
+
+/* Horizontal Rule */
+hr {
+  border: none;
+  border-top: 2px solid var(--border);
+  margin-bottom: 18px;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 14px;
+  color: var(--text-mid);
+  font-size: 1rem;
+}
+
+/* Recipe Image */
+img {
+  display: inline-block;
+  margin: 24px 0;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(107, 58, 42, 0.18);
+  max-width: 100%;
+  height: auto;
+}
+
+/* Lists */
+ul, ol {
+  padding-left: 22px;
+  margin-bottom: 18px;
+}
+
+ul li, ol li {
+  margin-bottom: 8px;
+  color: var(--text-mid);
+}
+
+ul li::marker {
+  color: var(--palm-red);
+}
+
+ol li::marker {
+  color: var(--deep-green);
+  font-weight: 700;
+}
+
+/* Inline Tags */
+strong {
+  color: var(--warm-brown);
+  font-weight: 700;
+}
+
+em {
+  color: var(--palm-red);
+  font-style: italic;
+}
+
+u {
+  text-decoration-color: var(--palm-light);
+  text-underline-offset: 3px;
+}
+
+/* Tips Paragraph */
+p:has(strong) {
+  background-color: #fff4e6;
+  border-left: 4px solid var(--palm-red);
+  padding: 14px 18px;
+  border-radius: 0 8px 8px 0;
+  margin-top: 24px;
+}
+
+/* Links */
+a {
+  color: var(--deep-green);
+  text-decoration: none;
+  font-weight: 700;
+  border-bottom: 2px solid var(--border);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+a:hover {
+  color: var(--palm-red);
+  border-color: var(--palm-red);
+}
+
+/* Responsive tweak for small screens */
+@media (max-width: 480px) {
+  h1 { font-size: 1.9rem; }
+  h2 { font-size: 1.25rem; }
+  body { padding: 24px 16px 60px; }
+}
